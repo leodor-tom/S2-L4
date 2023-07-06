@@ -111,13 +111,30 @@ epify(str);
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const check3and7 = function (int) {
+  if (int % 3 === 0 || int % 7 === 0) {
+    checkIs = "good";
+  } else {
+    checkIs = "bad";
+  }
+};
+
+check3and7(13);
+
+//console.log("The check is " + checkIs);
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
+const reverseString = function (str) {
+  revStr = str.split("").reverse().join("");
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+  return revStr;
+};
+
+reverseString("osammot");
+
+//console.log(revStr);
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
