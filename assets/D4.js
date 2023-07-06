@@ -42,14 +42,49 @@ crazySum(22, 22);
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazyDiff = function (l1) {
+  if (l1 >= 0) {
+    if (l1 < 19) {
+      crazyDiffRes = 19 - l1;
+    } else if (li === 19) {
+      crazyDiffRes = 19;
+    } else {
+      crazyDiffRes = (l1 - 19) * 3;
+    }
+  } else {
+    l1 = Math.abs(l1);
+    if (l1 < 19) {
+      crazyDiffRes = 19 - l1;
+    } else if (l1 === 19) {
+      crazyDiffRes = 19;
+    } else {
+      crazyDiffRes = l1 - 19;
+    }
+  }
+  return crazyDiffRes;
+};
+
+crazyDiff(-3);
+
+// console.log(crazyDiffRes);
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function (n) {
+  if ((n >= 20 && n <= 100) || n === 400) {
+    bouandaryRes = "true";
+  } else {
+    bouandaryRes = "false";
+  }
+  return bouandaryRes;
+};
+
+boundary(77);
+
+//console.log(bouandaryRes);
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -57,7 +92,19 @@ crazySum(22, 22);
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let str = "EPICODE is awesome";
+const epify = function (str) {
+  if (str.indexOf === "EPICODE ") {
+    epifyStr = str;
+  } else {
+    epifyStr = "EPICODE " + str;
+  }
+  return epifyStr;
+};
+
+epify(str);
+
+//console.log(epifyStr);
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
