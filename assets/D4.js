@@ -9,7 +9,13 @@ REGOLE
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const area = function (l1, l2) {
+  rectangleArea = l1 * l2;
+};
+
+area(7, 9);
+
+//console.log(rectangleArea);
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -17,7 +23,19 @@ REGOLE
  la loro somma moltiplicata per tre.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazySum = function (int1, int2) {
+  if (int1 !== int2) {
+    crazySumRes = int1 + int2;
+  } else {
+    crazySumRes = (int1 + int2) * 3;
+  }
+  return crazySumRes;
+};
+
+//crazySum(12, 24);
+crazySum(22, 22);
+
+//console.log(crazySumRes);
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
